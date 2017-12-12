@@ -1,0 +1,64 @@
+<h1>
+    result
+</h1>
+<hr>
+<h2>
+    you have submitted this form <%= @visit_count %> times
+</h2>
+<hr><hr>
+
+<div>
+    <h2>
+        Submitted Info:
+    </h2>
+    <table>
+        <tr>
+            <td>
+                Name
+            </td>
+            <td>
+                <%= @name %>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Dojo Location
+            </td>
+            <td>
+                <%= @location %>
+            </td>
+        </tr>
+                <tr>
+            <td>
+                Favourite Language
+            </td>
+            <td>
+                <%= @fav_lang %>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Comment
+            </td>
+            <td>
+                <%= @comment %>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<hr><hr>
+<table>
+    <tr>
+        <td>
+            <form action='/servform/reset' method='GET'>
+                <input type='submit' value='reset count'>
+            </form>
+        </td>
+        <td>
+            <form action='/servform/home' method='GET'>
+                <input type='submit' value='go back'>
+            </form>
+        </td>
+    </tr>
+</table>
